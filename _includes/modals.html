@@ -14,7 +14,11 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
+            {% if post.subtitle %}
+            <h4 class="subtitle">{{ post.subtitle }}</h4>
+            {% endif %}
             <hr class="star-primary">
+            <!-- Image Handling (from the second script) -->
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
             {% if post.description %}
             <p>{{ post.description }}</p>
@@ -30,9 +34,14 @@
                 <strong>{{ post.project-date }}</strong>
               </li>
               {% endif %}
-              {% if post.category %}
-              <li>Service:
-                <strong>{{ post.category }}</strong>
+              {% if post.skills %}
+              <li>Main Skills:
+                <strong>{{ post.skills }}</strong>
+              </li>
+              {% endif %}
+              {% if post.workplace %}
+              <li>Workplace:
+                <strong>{{ post.workplace }}</strong>
               </li>
               {% endif %}
             </ul>
