@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 5
+title: Scientific Activiies
+subtitle: Workshop organising and training
+img: organizing.jpg
+post-img: NatureResearch.jpg
+alt: image-alt
+click: Click on the image to zoom in
+icon: "fa-solid fa-people-roof"
+---
