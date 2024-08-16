@@ -1,0 +1,10 @@
+---
+layout: default
+modal-id: 6
+title: Languages
+subtitle: Languages I speak
+img: organizing.jph
+post-img: NaturResearch.jpg
+alt: image-alt
+icon: "fa-solid fa-people-arrows"
+---
