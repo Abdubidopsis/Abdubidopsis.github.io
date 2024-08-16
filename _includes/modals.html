@@ -14,19 +14,19 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
-            {% if post.subtitle %}
             <h4 class="subtitle">{{ post.subtitle }}</h4>
-            {% endif %}
             <hr class="star-primary">
-            <!-- Image Handling (from the second script) -->
-            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            <!-- Make the post image clickable -->
+            <a href="img/portfolio/{{ post.post-img }}" class="btn btn-lg btn-outline" target="_blank">
+              <img src="img/portfolio/{{ post.post-img }}" class="img-responsive img-centered portfolio-img" alt="{{ post.alt }}">
+            </a>
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
             <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
+              {% if post.workplace %}
+              <li>Workplace:
+                <strong>{{ post.workplace }}</strong>
               </li>
               {% endif %}
               {% if post.project-date %}
@@ -39,9 +39,9 @@
                 <strong>{{ post.skills }}</strong>
               </li>
               {% endif %}
-              {% if post.workplace %}
-              <li>Workplace:
-                <strong>{{ post.workplace }}</strong>
+              {% if post.click %}
+              <li>
+                <strong>{{ post.click }}</strong>
               </li>
               {% endif %}
             </ul>
